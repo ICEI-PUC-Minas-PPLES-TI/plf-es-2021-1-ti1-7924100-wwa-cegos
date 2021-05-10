@@ -3,11 +3,13 @@ body{
 }
 
 .header{
-    background: white;
-    height: 80px;
-    top: 14;
+    background: rgb(240, 238, 238);
+    height: x;
+    top: 0;
     padding: 0;
     margin: 0 0;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
 
 
 }
@@ -30,38 +32,45 @@ body{
 
 }
 
-
 .tradutor{
     height: 80px;
     width: 0px;
     right: 0px;
 }
 
-.interface{
-    margin-top: 5px;
+.but_login{
+    margin-top: 15px ;
+    margin-bottom: 10px;
+}
+
+.background{
+    margin-top: 20px;
     background-image: url(https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 550px;
+    max-width: 100%;
 }
 
 .btn{
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 5px;
-    display: grid;
+    display: flex;
+    justify-content: center;
 }
 
 
-
 .acesso{
-    margin-top: 120px;
     text-align: center;
+    margin-top: 20px;
+    
+}
+
+.interface{
+    height: 500px;
 }
 
 .acesso >p{
     margin: 0 auto;
     width: 20%;
+    text-align: center;
 }
 
 .interface2__{
@@ -211,5 +220,23 @@ ul{
 .rodape{
     background: rgb(224, 218, 218);
     height: 70px;
+}
+
+@media screen and (max-width: 767px){
+    .logo{
+        text-align: center;
+    }
+    .tradutor{
+        text-align: center;
+        margin-top: 10px;
+        height: 50px;
+    }
+    .acesso{
+        margin-top: 0px;
+    }
+
+
+
+
 }
 
