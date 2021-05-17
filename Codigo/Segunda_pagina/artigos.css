@@ -3,15 +3,23 @@ body{
 }
 
 .header{
-    background: rgb(240, 238, 238);
+    background: rgb(52, 134, 211);
     height: x;
     top: 0;
     padding: 0;
     margin: 0 0;
     border-bottom: 1px solid rgb(214, 214, 214);
     border-radius: 10px;
+    
+}
 
+.fundo{
+    background: rgb(52, 134, 211)
 
+}
+
+.main{
+    margin-top: 30px;
 }
 .logo{
     width: 80px;
@@ -32,7 +40,8 @@ body{
 }
 
 .nav-item{
-    border: 1px solid black;
+    border: 1px solid rgb(52, 134, 211) !important;
+    background-color: rgba(245, 245, 245, 0.918);
     border-radius: 50px;
     margin: 5px;
     width: 200px;
@@ -50,7 +59,7 @@ body{
 }
 
 .but_login{
-    margin-top: 40px ;
+    margin-top: 25px ;
     margin-bottom: 10px;
 }
 
@@ -59,11 +68,6 @@ body{
     justify-content: center;
 }
 
-.barra_pesquisa{
-    margin-top: 20px;
-    width: 40%  !important;
-    height: 10% !important;
-}
 
 .btn-info{
     background-color:
@@ -78,6 +82,15 @@ body{
     min-height: 600px !important;
 }
 
+.grupo_lista{
+    list-style: none;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+
+}
+
 .artigo{
     border: 1px rgb(194, 193, 193) solid;
 }
@@ -87,10 +100,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.artigo_imagem{
-    width: 200px;
-    height: 200px;
-    align-content: center;
+.titulo_do_artigo:first-child{
+    padding-top: 60px;
+}
+
+.titulo_do_artigo{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.background{
+    background-color: rgb(194, 193, 193);
+    padding: 40px 200px;
 }
 
 .butao_artigo{
@@ -109,19 +131,21 @@ body{
     margin-top: 25px;
 }
 
+
 .rodape{
-    background: rgb(224, 218, 218);
-    height: 70px;
+    background: rgb(52, 134, 211);;
+    height: 60px;
+}
+
+.logo_footer{
+    width: 50px;
+    padding: 5px;
+    margin-top: 8px;
 }
 
 @media screen and (max-width: 767px){
     .logo{
         text-align: center;
-    }
-    .tradutor{
-        text-align: center;
-        margin-top: 10px;
-        height: 50px;
     }
     .acesso{
         margin-top: 0px;
@@ -129,6 +153,20 @@ body{
     .but_login{
         margin-top: 0px;
     }
+    .tradutor{
+        text-align: center;
+
+    }
+    .background{
+        padding: 0;
+        background-color: none;
+    }
+    .titulo_do_artigo{
+        display: flex;
+        justify-content: center;
+        padding-top: 130px;
+    }
+
 
 }
 

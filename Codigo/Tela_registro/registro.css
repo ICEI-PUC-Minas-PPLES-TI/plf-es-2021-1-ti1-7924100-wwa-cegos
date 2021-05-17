@@ -2,8 +2,13 @@ body{
     background: white !important;
 }
 
-.header{
+.fundo{
     background: rgb(52, 134, 211);;
+}
+
+
+.header{
+    background: rgb(52, 134, 211);
     height: x;
     top: 0;
     padding: 0;
@@ -11,12 +16,8 @@ body{
     border-bottom: 1px solid rgb(214, 214, 214);
     border-radius: 10px;
 
-}
 
-.fundo{
-    background: rgb(52, 134, 211);;
 }
-
 .logo{
     width: 80px;
     margin-left: 0px;
@@ -72,7 +73,14 @@ body{
     display: flex;
     justify-content: center;
 }
-#login .container #login-row #login-column #login-box {
+
+.btn-primary{
+    background-color: red;
+
+}
+
+
+  #login .container #login-row #login-column #login-box {
     margin-top: 50px;
     margin-bottom: 40px;
     max-width: 400px;
@@ -88,10 +96,7 @@ body{
 
   .btn-primary{
       border-radius: 20px !important;
-  }
-
-  .btn2{
-      margin-top: 17px;
+      margin-left: 105px;
   }
 
   .entre_com{
@@ -125,7 +130,7 @@ body{
 }
 
 .rodape{
-    background: rgb(52, 134, 211);
+    background: rgb(52, 134, 211);;
     height: 100% !important;
 }
 
@@ -146,6 +151,7 @@ body{
     }
 
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 992px){
     #login-row{
@@ -168,7 +174,7 @@ body{
     }
     .icone1{
         margin-left: 30px !important;
-        margin-right: 7  !important;
+        margin-right: 70px  !important;
   
     }
 }
