@@ -79,10 +79,10 @@ body{
     height: 415px;
     background-color: rgb(255, 255, 255);
   }
-  #login .container #login-row #login-column #login-box #login-form {
+  #login .container #login-row #login-column #login-box #loginForm {
     padding: 20px;
   }
-  #login .container #login-row #login-column #login-box #login-form #register-link {
+  #login .container #login-row #login-column #login-box #loginForm #register-link {
     margin-top: -85px;
   }
 
