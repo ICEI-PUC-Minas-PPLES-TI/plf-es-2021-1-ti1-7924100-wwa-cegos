@@ -1,18 +1,22 @@
-# Nome do projeto
+# WWA - World Wide Accessibility
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+O principal objetivo deste trabalho é desenvolver uma aplicação web que ofereça modelos com diretrizes de acessibilidade para desenvolvedores.
+
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Carolina De Carvalho Corrêa
+* Arthur Wilson De Sousa
+* João Victor Guerra Prata Lima
+* Pedro Henrique Rodrigues
+* Vitória Símil Araújo
+* Yurajyánay Correia Andaluz
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Vieira Carneiro
+* Roberto Felipe Dias Ferreira da Rocha
+* Will Ricardo dos Santos Machado
 
 ## Instruções de utilização
 
