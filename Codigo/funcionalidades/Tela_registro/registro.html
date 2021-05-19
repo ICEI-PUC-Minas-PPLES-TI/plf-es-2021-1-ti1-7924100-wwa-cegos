@@ -11,6 +11,8 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script src="../scripts/registro.js"></script>
+
     <title>WWA - Login</title>
 </head>
 
@@ -39,24 +41,31 @@
                 <div id="login-column" class="col-md-12">
                     <div id="login-box" class="col-md-12 ">
                         <form id="loginForm" class="form" action="" method="post">
+
                             <h3 class="text-center text-info">Cadastro</h3>
+
                             <div class="form-group">
-                                <label for="username" class="text-info">E-mail:</label><br>
-                                <input type="text" name="username" id="username" class="form-control">
+                                <label for="user_name" class="text-info">Nome de usuário:</label><br>
+                                <input id="user_name" name="user_name" type="text" class="form-control" autocomplete="off">
                             </div>
+
                             <div class="form-group">
-                                <label for="password" class="text-info">Senha:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
+                                <label for="user_email" class="text-info">E-mail:</label><br>
+                                <input id="user_email" name="user_email" type="email" class="form-control" autocomplete="off">
                             </div>
+
                             <div class="form-group">
-                                <button type="button" class="btn btn-primary btn-lg">Cadastrar</button>
+                                <label for="user_password" class="text-info">Senha:</label><br>
+                                <input id="user_password" name="user_password" type="password" class="form-control" autocomplete="off">
                             </div>
-                            <div class="entre_com">
-                                Ou entre com
+
+                            <div class="form-group">
+                                <label for="user_passwordConfirm" class="text-info">Confirmar senha:</label><br>
+                                <input id="user_passwordConfirm" name="user_passwordConfirm" type="password" class="form-control" autocomplete="off">
                             </div>
-                            <div class="icones">
-                                <img src="imagens/twitter.png" class="icones icone1">
-                                <img src="imagens/gmail (1).png" class="icones">
+
+                            <div class="form-group">
+                                <button id="register_button" type="button" class="btn btn-primary btn-lg">Cadastrar</button>
                             </div>
 
                         </form>
