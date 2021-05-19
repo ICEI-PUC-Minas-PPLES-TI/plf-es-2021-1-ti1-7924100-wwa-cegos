@@ -36,7 +36,7 @@ onload = () => {
     var userConfirmPassword_check = false;
 
     //
-    // checkData() --> CONFIRMA SE TODOS OS DADOS ESTÃO CORRETOS PARA FAZER O CADASTRO
+    // checkData() --> CONFIRMS IF ALL DATA IS CORRECT TO REGISTER
     //
     let checkData = () => {return (userName_check && userEmail_check && userPassword_check && userConfirmPassword_check);}
     
