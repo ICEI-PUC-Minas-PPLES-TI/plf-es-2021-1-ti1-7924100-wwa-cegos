@@ -1,4 +1,4 @@
-import { findUserByPropertieAndValue } from './find_user.js'
+import { findUserByPropertieAndValue } from './utils/find_user.js'
 window.onload = () => {
     loginForm.onsubmit = (ev) => {
         try {
@@ -9,10 +9,14 @@ window.onload = () => {
                 'password': userPassword.value
             })
 
-            if (user)
+            if (user) {
+                delete user.password
+                sessionStorage.setItem('currentUser', JSON.stringify(user))
                 window.location.href = '../Main/wwa.html'
-            else
+            }
+            else {
                 alert('Usuário não encontrado!\nEmail ou senha incorretos')
+            }
 
         } catch (error) {
             console.error(error)
