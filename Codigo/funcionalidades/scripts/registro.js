@@ -1,5 +1,6 @@
 onload = () => {
 
+
     // REGISTER_BUTTON FUNCTIONS
     function enable_registerButton(){
         register_button.removeAttribute('disabled');
@@ -44,8 +45,23 @@ onload = () => {
     disable_registerButton();
 
 
+    alert(`Requisitos para cadastrar usuário:
+            Nome de usuário:
+                    - mínimo de 3 Caracteres;
+                    - máximo de 20 Caracteres;
+                    - não utilizar Caracteres especiais no final do nome;
+
+            Senha:
+                    - mínimo de 8 Caracteres;
+                    - pelo menos 1 Número;
+                    - pelo menos 1 Letra maiúscula;
+                    - pelo menor 1 Letra minúscula;
+                    - pelo menos 1 Caractere especial;`);
+
+
     user_name.oninput = () =>{
         userName_check = validate_userName(user_name.value);
+
 
         if(checkData())     return enable_registerButton();
         else                return disable_registerButton();
