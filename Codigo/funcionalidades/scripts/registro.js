@@ -99,6 +99,8 @@ onload = () => {
 
         localStorage.setItem(user_name.value, JSON.stringify(user));
 
+        disable_registerButton();
+
         user_name.value = '';
         user_email.value = '';
         user_password.value = '';
