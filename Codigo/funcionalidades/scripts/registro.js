@@ -92,9 +92,9 @@ onload = () => {
     register_button.onclick = () =>{
 
         let user = {
-            user_name: user_name.value,
-            user_email: user_email.value,
-            user_password: user_password.value
+            name: user_name.value,
+            email: user_email.value,
+            password: user_password.value
         }
 
         localStorage.setItem(user_name.value, JSON.stringify(user));
@@ -105,21 +105,4 @@ onload = () => {
         user_passwordConfirm.value = '';
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
