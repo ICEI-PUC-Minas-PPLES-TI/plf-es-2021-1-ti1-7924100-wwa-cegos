@@ -88,6 +88,16 @@ onload = () => {
         else                return disable_registerButton();
     }
 
+    //
+    //  Fake DataBase
+    //
+    var db = {
+        users : [{
+            name: "Cris",
+            email: "cris@gmail.com",
+            password: "12345Cr!ss"
+        }]
+    };
 
     register_button.onclick = () =>{
 
@@ -97,9 +107,15 @@ onload = () => {
             password: user_password.value
         }
 
-        localStorage.setItem(user_name.value, JSON.stringify(user));
+        db.users.push(user);
+        localStorage.setItem("users", JSON.stringify(db));
 
         disable_registerButton();
+
+        userName_check = false;
+        userEmail_check = false;
+        userPassword_check = false;
+        userConfirmPassword_check = false;
 
         user_name.value = '';
         user_email.value = '';
