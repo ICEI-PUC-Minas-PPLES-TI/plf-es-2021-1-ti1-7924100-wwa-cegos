@@ -1,5 +1,7 @@
-onload = () => {
+import {db} from '../database/index.js'
 
+window.onload = () => {
+console.log(db);
 
     // REGISTER_BUTTON FUNCTIONS
     function enable_registerButton(){
@@ -91,13 +93,18 @@ onload = () => {
     //
     //  Fake DataBase
     //
-    var db = {
-        users : [{
-            name: "Cris",
-            email: "cris@gmail.com",
-            password: "12345Cr!ss"
-        }]
-    };
+
+    // var db = {
+    //     users : [{
+    //         name: "Cris",
+    //         email: "cris@gmail.com",
+    //         password: "12345Cr!ss"
+    //     }]
+    // };
+
+    /*
+    (Não  pode ter email e nome iguais.) -> Função para procurar email ou nome passado
+    */
 
     register_button.onclick = () =>{
 

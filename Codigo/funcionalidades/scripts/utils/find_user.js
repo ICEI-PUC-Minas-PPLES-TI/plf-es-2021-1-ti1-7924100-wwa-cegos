@@ -1,6 +1,7 @@
 import { getUsersFromDb } from './get_users_db.js'
 
 export function findUserByPropertieAndValue(propertiesAndValues) {
+
     let foundedUsers = []
     const users = getUsersFromDb()
     if (users) {
