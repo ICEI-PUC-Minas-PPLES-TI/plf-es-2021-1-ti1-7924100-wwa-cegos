@@ -109,12 +109,13 @@
             let resposta = confirm(`Logado com sucesso. Bem vindo, ${googleUser.getBasicProfile().getName()}!\nQuer ser redirecionado para o site principal?`)
             if (resposta == true)
                 window.location.replace("https://tiawsprint01.pedrohenriqu659.repl.co/index.html");
-            console.log('Logado como: ' + googleUser.getBasicProfile().getName());
+            
+                console.log('Logado como: ' + googleUser.getBasicProfile().getName());
 
             var db = {
                 users: [{
-                    name: "googleUser.getBasicProfile().getName()",
-                    email: "googleUser.getBasicProfile().getEmail()",
+                    name: "Teste",
+                    email: "Teste@hotmail.com",
                     password: "#"
                 }]
             };
@@ -122,7 +123,7 @@
             let userGoogle = {
                 name: googleUser.getBasicProfile().getName(),
                 email: googleUser.getBasicProfile().getEmail(),
-                password: null,
+                password: '#',
             }
 
             db.users.push(userGoogle);
