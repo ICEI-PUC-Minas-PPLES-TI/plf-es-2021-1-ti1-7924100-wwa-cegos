@@ -16,6 +16,12 @@ const db = {
         name: "Cris",
         email: "cris@gmail.com",
         password: "12345Cr!ss"
+    }],
+
+    admin : [{
+        name: "admin",
+        email: "admin@admin.com",
+        password: "Admin12345!"
     }]
 };
 
