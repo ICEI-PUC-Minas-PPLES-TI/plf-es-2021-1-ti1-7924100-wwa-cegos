@@ -1,0 +1,180 @@
+body{
+    background: white !important;
+}
+
+.fundo{
+    background: rgb(52, 134, 211);;
+}
+
+
+.header{
+    background: rgb(52, 134, 211);
+    height: x;
+    top: 0;
+    padding: 0;
+    margin: 0 0;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+
+
+}
+.logo{
+    width: 80px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.logo > h2{
+    font-size: 100%;
+    text-align: center;
+}
+.nav{
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px !important;
+
+}
+
+.nav-item{
+    border: 1px solid rgb(52, 134, 211) !important;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 50px;
+    margin: 0px;
+    width: 200px;
+
+}
+
+.nav-item .nav-link{
+    text-align: center;
+}
+
+.tradutor{
+    height: 80px;
+    width: 0px;
+    right: 0px;
+}
+
+#login-row{
+    margin-left: 340px;
+}
+
+.but_login{
+    margin-top: 0px ;
+    margin-bottom: 10px;
+}
+
+.login-column{
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary{
+    background-color: red;
+
+}
+
+
+  #login .container #login-row #login-column #login-box {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    max-width: 400px;
+    height: 415px;
+    background-color: rgb(255, 255, 255);
+  }
+  #login .container #login-row #login-column #login-box #loginForm {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #loginForm #register-link {
+    margin-top: -85px;
+  }
+
+  .btn-primary{
+      border-radius: 20px !important;
+      margin-left: 105px;
+  }
+
+  .entre_com{
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 10px;
+  }
+
+  .icone1{
+      margin-left: 60px !important;
+      margin-right: 100px  !important;
+
+  }
+
+  .icones{
+    margin: 0 auto;
+    width: 40px;
+    display: inline;
+    justify-content: center !important;
+    
+  }
+
+  .footer{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.texto_footer{
+    margin-top: 25px;
+}
+
+.rodape{
+    background: rgb(52, 134, 211);;
+    height: 100% !important;
+}
+
+@media screen and (max-width: 767px){
+    .logo{
+        text-align: center;
+    }
+    .tradutor{
+        text-align: center;
+        margin-top: 10px;
+        height: 50px;
+    }
+    .acesso{
+        margin-top: 0px;
+    }
+    .but_login{
+        margin-top: 0px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #login-row{
+        margin-left: 130px;
+    }
+}
+
+@media screen and (min-width:361px) and (max-width: 767px){
+    #login-row{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #login-row{
+        margin-left: 0px;
+    }
+    .icones{
+        width: 30px;
+    }
+    .icone1{
+        margin-left: 30px !important;
+        margin-right: 70px  !important;
+  
+    }
+}

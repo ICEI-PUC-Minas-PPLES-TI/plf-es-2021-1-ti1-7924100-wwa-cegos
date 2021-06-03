@@ -3,7 +3,6 @@ window.onload = () => {
     loginForm.onsubmit = (ev) => {
         try {
             ev.preventDefault()
-
             const [user] = findUserByPropertieAndValue({
                 'email': userEmail.value,
                 'password': userPassword.value
