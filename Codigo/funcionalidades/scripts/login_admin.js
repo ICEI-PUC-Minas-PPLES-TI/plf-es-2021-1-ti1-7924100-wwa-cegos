@@ -41,4 +41,18 @@ window.onload = () => {
         }
     }
 
+    login_button.onclick = () => {
+        if( userEmail.value == db.admin[0].email && user_password.value == db.admin[0].password){
+            alert("Login realizado com sucesso!");
+        }
+        else{
+            alert("Dados inválidos!");
+
+            userEmail.value = '';
+            user_password.value = '';
+
+            disable_loginButton();
+        }
+    }
+
 }
