@@ -1,4 +1,6 @@
 import {db} from '../database/index.js'
+import {searchNameInDataBase} from '../scripts/utils/search_name_db'
+import {searchEmailInDataBase} from '../scripts/utils/search_email_db'
 
 window.onload = () => {
 console.log(db);
@@ -17,19 +19,19 @@ console.log(db);
     }
 
     // VALIDATION FUNCTIONS
-    function validate_userName(userName){
+    function validate_userName(user_name){
         let regex = /^(?=[a-zA-Z0-9_]{3,20}$)(?!.*[_.]{2})[^_.].*[^_.]$/;
-        return regex.test(userName);
+        return regex.test(user_name);
     }
 
-    function validate_userEmail(userEmail){
+    function validate_userEmail(user_email){
         let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-        return regex.test(userEmail);
+        return regex.test(user_email);
     }
 
-    function validate_userPassword(userPassword){
+    function validate_userPassword(user_password){
         let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
-        return regex.test(userPassword);
+        return regex.test(user_password);
     }
 
 
@@ -62,7 +64,7 @@ console.log(db);
 
 
     user_name.oninput = () =>{
-        userName_check = validate_userName(user_name.value);
+        userName_check = validate_userName(userName.value);
 
 
         if(checkData())     return enable_registerButton();
@@ -70,7 +72,7 @@ console.log(db);
     }
 
     user_email.oninput = () =>{
-        userEmail_check = validate_userEmail(user_email.value);
+        userEmail_check = validate_userEmail(userEmail.value);
 
         if(checkData())     return enable_registerButton();
         else                return disable_registerButton();
@@ -90,17 +92,6 @@ console.log(db);
         else                return disable_registerButton();
     }
 
-    //
-    //  Fake DataBase
-    //
-
-    // var db = {
-    //     users : [{
-    //         name: "Cris",
-    //         email: "cris@gmail.com",
-    //         password: "12345Cr!ss"
-    //     }]
-    // };
 
     /*
     (Não  pode ter email e nome iguais.) -> Função para procurar email ou nome passado
@@ -109,8 +100,8 @@ console.log(db);
     register_button.onclick = () =>{
 
         let user = {
-            name: user_name.value,
-            email: user_email.value,
+            name: userName.value,
+            email: userEmail.value,
             password: user_password.value
         }
 
@@ -124,8 +115,8 @@ console.log(db);
         userPassword_check = false;
         userConfirmPassword_check = false;
 
-        user_name.value = '';
-        user_email.value = '';
+        userName.value = '';
+        userEmail.value = '';
         user_password.value = '';
         user_passwordConfirm.value = '';
 
