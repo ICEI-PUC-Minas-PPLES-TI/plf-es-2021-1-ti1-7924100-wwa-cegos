@@ -32,23 +32,23 @@ console.log(db);
     function validate_userPassword(user_password){
         let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
         return regex.test(user_password);
+
     }
 
-
-    var userName_check = false;
-    var userEmail_check = false;
-    var userPassword_check = false;
-    var userConfirmPassword_check = false;
-
-    //
-    // checkData() --> CONFIRMS IF ALL DATA IS CORRECT TO REGISTER
-    //
-    let checkData = () => {return (userName_check && userEmail_check && userPassword_check && userConfirmPassword_check);}
-    
+    db.users.push(user);
+    localStorage.setItem("users", JSON.stringify(db));
 
     disable_registerButton();
 
+    userName_check = false;
+    userEmail_check = false;
+    userPassword_check = false;
+    userConfirmPassword_check = false;
 
+    user_name.value = '';
+    user_email.value = '';
+    user_password.value = '';
+    user_passwordConfirm.value = '';
     alert(`Requisitos para cadastrar usuário:
             Nome de usuário:
                     - mínimo de 3 Caracteres;
@@ -105,8 +105,7 @@ console.log(db);
             password: user_password.value
         }
 
-        db.users.push(user);
-        localStorage.setItem("users", JSON.stringify(db));
+  }
 
         disable_registerButton();
 
