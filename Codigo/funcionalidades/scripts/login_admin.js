@@ -8,6 +8,8 @@ window.onload = () => {
         }]
     };
 
+    localStorage.setItem("admin", JSON.stringify(db));
+
     // LOGIN_BUTTON FUNCTIONS
     function enable_loginButton(){
         login_button.removeAttribute('disabled');
