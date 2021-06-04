@@ -48,7 +48,7 @@ window.onload = () => {
             alert("Login realizado com sucesso!");
         }
         else{
-            alert("Dados inválidos!");
+            alert("Dados inválidos.");
 
             userEmail.value = '';
             user_password.value = '';
