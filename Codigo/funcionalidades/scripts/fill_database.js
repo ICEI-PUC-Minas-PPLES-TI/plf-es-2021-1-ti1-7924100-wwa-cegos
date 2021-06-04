@@ -1,7 +1,3 @@
-fetch('../database/users.json').then(file =>
-    file.json()
-).then(content => {
-    localStorage.setItem('users', JSON.stringify(content))
-})
+import { db } from '../database/index.js'
 
-
+localStorage.setItem('users',JSON.stringify(db.users))

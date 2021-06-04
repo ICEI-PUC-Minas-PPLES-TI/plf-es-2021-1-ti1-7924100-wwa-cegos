@@ -1,7 +1,10 @@
-export function searchEmailInDataBase(){
-    for(let x = 0; x < db.users.length; ++x){
-        if(db.users[x].email == userEmail.value)
-        return true;
+//TODO: refactor to return user and receive email as param
+import {db} from '../../database/index.js'
+export function searchEmailInDataBase() {
+    const quantityOfUsers = db.users.length 
+    for (let x = 0; x < quantityOfUsers; ++x) {
+        if (db.users[x].email == userEmail.value)
+            return true;
     }
     return false;
 }
