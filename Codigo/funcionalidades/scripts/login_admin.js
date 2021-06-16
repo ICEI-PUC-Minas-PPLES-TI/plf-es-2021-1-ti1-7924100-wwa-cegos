@@ -1,12 +1,6 @@
-window.onload = () => {
+import { db } from '../database/index.js'
 
-    const db = {
-        admin : [{
-            name: "admin",
-            email: "admin@admin.com",
-            password: "Admin12345!"
-        }]
-    };
+window.onload = () => {
 
     localStorage.setItem("admin", JSON.stringify(db));
 
