@@ -4,6 +4,8 @@ O principal objetivo deste trabalho é desenvolver uma aplicação web que ofere
 
 O site hospedado se encontra em: https://wwa--anacarv.repl.co/index.html
 
+Como as Branchs criadas no repositório alternativo não podem ser replicadas (e são muitas!), o link do dado repositório se encontra em: https://github.com/PeterCcT/tiaw_project.github.io
+
 
 ## Alunos integrantes da equipe
 
