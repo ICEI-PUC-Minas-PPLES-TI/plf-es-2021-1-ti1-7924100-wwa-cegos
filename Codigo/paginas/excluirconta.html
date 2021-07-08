@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWA-Excluir Conta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="../estilos/wwa_alternative.css">
+
+
+    <section class="fundo">
+        <header class="container header">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo">
+                    <img src="../imagens/logo_wwa.png" class="logo">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 nav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="wwa2.html">Home Page</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2 tradutor">
+                    <!--se estiver logado-->
+                    <div class="dropdown">
+                        <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle fa-2x"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <!--listar dados-->
+                            <li><a class="dropdown-item" href="minhaconta.html"><i class="fas fa-user"></i> Meu
+                                    Perfil</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Configurações</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair da
+                                    conta</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <script>
+        window.onload = () => {
+            let senha2 = 1234;
+            bt.disabled = true;
+            let validaForm = () => {
+                if (userPassword.value.length == 0 || userPassword2.value.length == 0)
+                    bt.disabled = true;
+                else
+                    bt.disabled = false;
+                bt.onclick = () => {
+                    if (userPassword.value != userPassword2.value) {
+                        let confirma = confirm('As senhas devem ser iguais');
+                    }
+                    else {
+                        if (senha2 != userPassword) {
+                            alert('Senha incorreta! Por favor, tente novamente')
+                        }
+                        else {
+                            console.clear()
+                            let confirma = confirm('Sua conta foi excluída com sucesso');
+                        }
+                    }
+                }
+            }
+            if (validaForm == false) {
+                alert('ERRO! Por favor, tente novamente')
+            }
+            userPassword.onchange = validaForm;
+            userPassword2.onchange = validaForm;
+        };
+
+    </script>
+</head>
+
+<body>
+    <main class="container">
+        <div id="senhaConfirmacao">
+            <div>
+                <h1>Excluir Conta</h1>
+            </div>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="userPassword" class="col-form-label">
+                        <h5>Digite sua senha:</h5>
+                    </label>
+                </div>
+                <div class="col-auto">
+                    <input type="password" id="userPassword" class="form-control" name="userPassword"
+                        aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+            <span id="instrucoes"></span>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="userPassword2" class="col-form-label">
+                        <h5>Confirme sua senha:</h5>
+                    </label>
+                </div>
+                <div class="col-auto">
+                    <input type="password" id="userPassword2" class="form-control" name="userPassword2"
+                        aria-describedby="passwordHelpInline">
+                </div>
+            </div>
+            <span id="instrucoes"></span>
+            <p>
+            <h6>Após completar os campos acima, por favor clique no botão abaixo.</h6>
+            </p>
+            <div>
+                <button type="button" id="bt" class="btn btn-danger">Excluir Conta</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

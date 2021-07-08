@@ -1,0 +1,216 @@
+body {
+    background: rgb(231, 226, 226);
+}
+
+.fundo {
+    background: rgb(71, 166, 255);
+}
+
+.header {
+    background   : rgb(71, 166, 255);
+    height       : x;
+    top          : 0;
+    padding      : 0;
+    margin       : 0 0;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+
+
+}
+
+.logo {
+    width      : 80px;
+    margin-left: 0px;
+}
+
+.nav {
+    align-items    : center;
+    margin         : 0 auto;
+    text-decoration: none;
+
+
+}
+
+.nav-item {
+    border          : 1px solid rgb(52, 134, 211) !important;
+    background-color: rgba(253, 249, 249, 0.918);
+    border-radius   : 50px;
+    margin          : 5px;
+    text-decoration : none;
+    color           : inherit
+}
+
+.tradutor {
+    height: 80px;
+    width : 0px;
+    right : 0px;
+}
+
+.but_login {
+    margin-top   : 15px;
+    margin-bottom: 20px;
+}
+
+.but_login a,
+.but_login a:hover {
+    color: white;
+}
+
+.texto_wwa {
+    background-color: rgb(71, 166, 255);
+    padding         : 30px;
+    border-radius   : 25px;
+}
+
+.btn {
+    display        : flex;
+    justify-content: center;
+}
+
+
+.inicio {
+    background-color: rgb(223, 239, 255);
+    height          : 500px;
+}
+
+
+.titulo_inicio {
+    padding-top    : 130px;
+    display        : flex;
+    justify-content: center;
+}
+
+.apresentacao_inicio {
+    display        : flex;
+    justify-content: center;
+}
+
+.interface2 {
+    background-color: rgb(71, 166, 255);
+    border-radius   : 50px;
+}
+
+.interface2__ {
+    margin-top   : 30px;
+    background   : rgb(255, 255, 255);
+    margin-bottom: 40px !important;
+}
+
+.artigos {
+    background-color: white;
+    padding-top     : 80px;
+    padding-bottom  : 80px;
+    border-radius   : 50px;
+}
+
+.artigos_ {
+    background-color: white;
+    padding-top     : 80px;
+    padding-bottom  : 80px;
+    border-radius   : 50px;
+    margin-bottom   : 30px;
+}
+
+.artigos a,
+.artigos a:hover,
+.artigos_ a,
+.artigos_ a:hover {
+    width : 100%;
+    height: 100%;
+    color : black;
+}
+
+.imgs>img {
+    max-width    : 70%;
+    margin-top   : 10px;
+    margin-bottom: 5px;
+
+}
+
+.imgs {
+    margin-top : 30px;
+    padding-top: 10px;
+
+
+}
+
+.imgs2 {
+    margin-bottom: 0px;
+}
+
+.imagens_conteudo {
+    text-align: center;
+}
+
+.sobre {
+    margin-top      : 50px;
+    margin-bottom   : 50px;
+    background-color: rgb(135, 194, 250);
+}
+
+.sobre_texto {
+    padding-left  : 40px !important;
+    padding-top   : 20px;
+    padding-bottom: 40px;
+}
+
+.titulo {
+    padding-bottom: 5px;
+}
+
+.sobre_redes>img {
+    width      : 40px;
+    padding-top: 90px !important;
+    padding    : 5px;
+}
+
+.sobre_redes a>img {
+    width      : 40px;
+    padding-top: 90px !important;
+    padding    : 5px;
+}
+
+.sobre_redes {
+    text-align: center;
+}
+
+
+.footer {
+    text-align: center;
+    margin    : 0 auto;
+}
+
+.texto_footer {
+    margin-top: 25px;
+}
+
+.rodape {
+    background: rgb(71, 166, 255);
+    height    : 90px;
+}
+
+.logo_footer {
+    width     : 80px;
+    padding   : 5px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        text-align: center;
+    }
+
+    .tradutor {
+        text-align: center;
+        margin-top: 10px;
+        height    : 50px;
+    }
+
+    .acesso {
+        margin-top: 0px;
+    }
+
+
+
+
+}

@@ -1,0 +1,21 @@
+.categories_container {
+    height          : 100%;
+    background-color: gray;
+    width           : fit-content;
+    padding-right   : 3rem;
+}
+
+.categories_menu {
+    list-style: none;
+}
+
+.categories_menu .categorie_card {
+    padding         : 1rem 2rem;
+    background-color: white;
+    border-radius   : .3rem;
+}
+
+.categorie_card+.categorie_card {
+    margin-top: 2.2rem;
+}
+

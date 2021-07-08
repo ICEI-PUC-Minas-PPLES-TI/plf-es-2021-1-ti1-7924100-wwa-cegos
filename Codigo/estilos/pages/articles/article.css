@@ -1,0 +1,47 @@
+body,
+html {
+    margin : 0;
+    padding: 0;
+}
+
+.main_container {
+    width  : 100vw;
+    height : 100vh;
+    display: flex;
+}
+
+
+.article_container {
+    margin  : 1rem;
+    position: relative;
+}
+
+.article_content h1 {
+    text-align: center;
+}
+
+.article_actions_container {
+    position: absolute;
+    bottom  : 0;
+    right   : 0;
+}
+
+.article_actions {
+    display   : flex;
+    list-style: none;
+}
+
+.article_actions i {
+    font-size: 2rem;
+}
+
+.article_action+.article_action {
+    margin-left: 3rem;
+}
+
+.article_action #favoritie_action,
+.article_action #unfavorite_action {
+    cursor: click;
+    color  : goldenrod;
+    display: none;
+}

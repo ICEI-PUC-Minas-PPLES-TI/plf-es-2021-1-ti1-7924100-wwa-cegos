@@ -1,0 +1,195 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: #0468BF;
+    height: 60px;
+}
+
+.search-box {
+    position: absolute;
+    top: 16px;
+    left: 40%;
+
+    border: 3px solid #E7A9A2;
+    border-radius: 50px;
+
+    padding: 3px 80px 3px;
+
+    background-color: white;
+}
+
+.search-box input {
+    text-align: center;
+    border-style: none;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.container {
+    position: relative;
+    top: 70px;
+    left: 30%;
+
+    width: 60%;
+    max-width: 580px;
+    height: 420px;
+
+    border-radius: 60px;
+
+    background-color: #307CBF;
+}
+
+.box--title {
+    position: absolute;
+    top: -25px;
+    left: 50px;
+
+    border: 5px solid #307CBF;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    background: white;
+}
+
+.box--title span {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.box--form1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    background: white;
+}
+.box--form1 input{
+    text-align: center;
+    border-style: none;
+}
+
+.box--form1 input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.box--form2 {
+    position: absolute;
+    top: 50px;
+    left: 55%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    background: white;
+}
+.box--form2 input {
+    text-align: center;
+    border: none;
+}
+
+.box--form2 input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.box--form3 {
+    position: absolute;
+    top: 120px;
+    left: 55%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    background: white;
+}
+.box--form3 input{
+    text-align: center;
+    border-style: none;
+}
+
+.box--form3 input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.box--form4 {
+    position: absolute;
+    top: 155px;
+    left: 55%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    background: white;
+}
+.box--form4 input{
+    text-align: center;
+    border-style: none;
+}
+
+.box--form4 input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.box--textarea {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+
+.box--button {
+    position: absolute;
+    bottom: 0px;
+    left: 110%;
+}
+
+.box--button button {
+    background-color: white;
+    border: 3px solid #E29790;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+.box--button button:hover {
+    background-color: #E29790;
+}
+
+.box--button button:active {
+    background-color: #c5756e;
+    border-color: #c5756e;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+
+    height: 40px;
+    width: 100%;
+
+    background-color: #0468BF;
+}

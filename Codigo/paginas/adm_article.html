@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="module" src="../scripts/fill_database.js"></script>
+        <script type="module" src="../scripts/login.js"></script>
+
+        <link rel="stylesheet" href="../estilos/adm_article.css">
+        
+        <title>Inserir Artigos</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="search-box">
+                <input type="text" name="" placeholder="Pesquisar">
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="box--title">
+                    <span>ADICIONAR ARTIGO</span>
+                </div>
+
+                <div class="box--form1">
+                    <input id="title_article" type="text" placeholder="TÍTULO">
+                </div>
+                <div class="box--form2">
+                    <input id="category_article" type="text" placeholder="CATEGORIA">
+                </div>
+                <div class="box--form3">
+                    <input id="data_article" type="text" placeholder="DATA">
+                </div>
+                <div class="box--form4">
+                    <input id="author_article" type="text" placeholder="AUTOR">
+                </div>
+
+                <div class="box--textarea">
+                    <textarea name="" id="content_article" cols="65" rows="10"></textarea>
+                </div>
+
+                <div class="box--button">
+                    <button id="btn_publicar">PUBLICAR</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+
+        </footer>
+
+        <script type="module" src="../scripts/fill_database.js"></script>
+        <script type="module" src="../scripts/adm_article.js"></script>
+    </body>
+</html>
