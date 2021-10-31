@@ -1,0 +1,35 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: WWA - World Wide Accessibility 
+authors:
+  - family-names: De Carvalho Corrêa
+    given-names: Ana Carolina
+  - family-names: Wilson De Sousa
+    given-names: Arthur
+  - family-names: Guerra Prata Lima
+    given-names: João Victor 
+  - family-names: Rodrigues
+    given-names: Pedro Henrique 
+  - family-names: Símil Araújo
+    given-names: Vitória
+  - family-names: Correia Andaluz
+    given-names: Yurajyánay
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Felipe Dias Ferreira da Rocha
+    given-names: Roberto
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Ricardo dos Santos Machado
+    given-names: Will
+keywords:
+  - Acessibilidade
+  - Desenvolvedeores
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7924100-wwa-cegos
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2021-06-20
